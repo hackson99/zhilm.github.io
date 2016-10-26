@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>智卓星网影视联盟高清在线播放 - 更多精彩智卓星网影视联盟直播手机版</title>
+<meta charset="utf-8">
+<meta name="application-name" content="VST直播,VST手机版,智卓星网影视电视直播手机版,vstlive,52itv" />
+<meta name="title" content="智卓星网影视高清在线播放 - 更多精彩百度搜索智卓黑客电视直播手机版"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="手机高清在线播放,VST,直播,手机版,高清,免费wap,vstlive,智卓黑客联盟">
+<meta name="description" content="中央一台高清在线播放,VST,直播,手机版,wap,高清,免费,vstlive,智卓黑客联盟">
+<link rel="stylesheet" href="http://libs.baidu.com/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<script src="vstplayer.js"></script>
+<style type="text/css">
+.warning {display: none;}
+.warning a{ float: left;}
+.warning #msg { float: left; width: 90%; font-size: 0.9em;}
+.headerNfooter {background-color: #C00;color: #fff;text-shadow: none;}
+.headerNfooter a:link,.headerNfooter a:hover,.headerNfooter a:visited,.headerNfooter a:active { color: #fff; text-decoration: none;}
+.headerNfooter h1 { text-indent: -999em; }
+#gridPanel .ui-block-a {padding:0 0.4em 0.6em 0;}
+#gridPanel .ui-block-b {padding:0 0.2em 0.6em 0.2em;}
+#gridPanel .ui-block-c {padding:0 0 0.6em 0.4em;}
+#gridPanel .ui-bar { border:none;height:5em;color:#fff;text-shadow:none;text-align: center;}
+#gridPanel a { text-decoration:none;}
+#gridPanel .tv{background: #59b759;background: -moz-linear-gradient(top,#6acb6a,#59b759);background:-webkit-gradient(linear, 0 0, 0 100%, from(#6acb6a), to(#59b759));}
+#gridPanel .news{background: #73bcdd;background: -moz-linear-gradient(top,#87cded,#73bcdd);background:-webkit-gradient(linear, 0 0, 0 100%, from(#87cded), to(#73bcdd));}
+#gridPanel .event{background: #a259a0;background: -moz-linear-gradient(top,#b26ab0,#a259a0);background:-webkit-gradient(linear, 0 0, 0 100%, from(#b26ab0), to(#a259a0));}
+#gridPanel .baoliao{background: #ddac00;background: -moz-linear-gradient(top,#f3bf0a,#ddac00);background:-webkit-gradient(linear, 0 0, 0 100%, from(#f3bf0a), to(#ddac00));}
+#gridPanel .host{background: #d75a92;background: -moz-linear-gradient(top,#e674a7,#d75a92);background:-webkit-gradient(linear, 0 0, 0 100%, from(#e674a7), to(#d75a92));}
+#gridPanel .eat{background: #f54f33;background: -moz-linear-gradient(top,#ff6349,#f54f33);background:-webkit-gradient(linear, 0 0, 0 100%, from(#ff6349), to(#f54f33));}
+.swipe{overflow: hidden;visibility: hidden;position: relative;}
+.swipe-wrap{overflow: hidden;position: relative;}
+.swipe-wrap > div {float:left;width:100%;position: relative;}
+#mySwipe div p{width:100%;height:2em;font-size: 1em;line-height:2em;position:absolute;bottom:0.3em;left:0;background:rgba(0,0,0,0.7);color:#fff;margin:0;text-shadow:none;}
+#mySwipe div p a{color:#fff;padding:0.5em;text-decoration:none;}
+#mySwipe div{width:100%;position:relative;}
+#mySwipe div img{width:100%;}
+nav {position:relative;max-width:75%;margin: 0.25em auto 1em auto;}
+nav #position{text-align:center;list-style:none;margin:0;padding:0;}
+nav #position li{display:inline-block;width:0.5em;height:0.5em;border: 1px solid #999;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;background: #999;margin:0 0.3em;cursor:pointer;}
+nav #position li.on{background-color: rgba(0, 0, 0, 0);border: 1px solid #999;border-color: #999;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
+#splitToggleGroup .ui-controlgroup-controls{width: 100%;text-align: center;}
+#splitToggleGroup .ui-radio {width:50%;}
+</style>
+</head>
+<body>
+<div data-role="page">
+<div class="headerNfooter" data-role="header" data-theme="f" data-position="fixed">
+        <h1>影音高清在线播放 - 更多精彩百度搜索智卓黑客联盟直播手机版</h1>
+        <a href="javascript:history.back()" data-iconpos="left" data-icon="back">返回</a>
+        <a href="http://zhizhuoh.lofter.com/post/4956d4_93a448e" data-icon="home" data-role="button" data-inline="true">官方</a>
+</div><!-- /header -->
+<div align="center"><script src="ad.js" type="text/javascript"></script></div>
+<div data-role="content">
+   <ul data-role="listview" data-inset="true" data-divider-theme="a" data-filter="true" data-filter-placeholder="搜索">
+   	<li data-role="list-divider"><center><video autoplay name="vstPlayer" id="vstPlayer" width="100%" controls></video></br>
+<select onchange="startPlayer(this.options[this.selectedIndex].value)" id="playURL"><option value="http://live.gslb.letv.com/gslb?stream_id=lb_1080P_1080p3m&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">点击进入更多视频播放</option>
+<option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_hkmovie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">在线视频6</option>
+<option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_dzdy_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">在线视频7</option>
+<option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_movie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">在线视频8</option>
+<option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_comedy_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">在线视频9</option>
+<option value="http://video01-lax.streamup.com/app/twkumazombie005s-channel/chunklist.m3u8">直播视频10</option><option value="http://video01-lax.streamup.com/app/ort33s-channel/chunklist.m3u8">直播视频11</option><option value="http://video01-lax.streamup.com/app/chicktv/chunklist.m3u8">直播视频12</option>	
+<option value="http://video01-lax.streamup.com/app/mrrock1234s-channel/chunklist.m3u8">直播视频13</option><option value="http://video01-lax.streamup.com/app/dofuzlolitas-channel/chunklist.m3u8">直播视频14</option>
+<option value="http://video01-lax.streamup.com/app/maxanimationdesk/chunklist.m3u8">直播视频15</option>
+<option value="http://video01-lax.streamup.com/app/mskgg01s-channel/chunklist.m3u8">直播视频16</option>
+<option value="http://video01-lax.streamup.com/app/starfoods-stream/chunklist.m3u8">直播视频17</option>
+<option value="http://video01-lax.streamup.com/app/yjg75682s-channel/chunklist.m3u8">直播视频18</option>
+<option value="http://d2e6xlgy8sg8ji.cloudfront.net/liveedge/eratv3/chunklist.m3u8">直播视频19</option>
+<option value="http://live.waaarp.com/live/_definst_/smil:titv/titv.smil/chunklist_b800000.m3u8">直播视频22</option><option value="http://178.33.126.213:1935/bsx24/mpegts1.stream/.m3u8">在线视频24</option><option value="http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8">视频直播频道1</option>
+<option value="http://210.200.79.26:1935/live/acti_2_sp.sdp/chunklist.m3u8">视频直播频道2</option><option value="http://live2.tdm.com.mo:80/tv/ch2.live/playlist.m3u8">视频直播频道3</option>
+<option value="http://live4.tdm.com.mo:1935/tv/ch2.live/playlist.m3u8">视频直播频道4</option>
+<option value="http://182.92.189.193:1935/live/h_hanya_1/playlist.m3u8">视频直播频道5</option>
+<option value="http://122.202.129.136:1935/live/ch5/playlist.m3u8">视频直播频道6</option>
+<option value="http://202.69.67.66:443/webcast/bslive-mobile/playlist.m3u8">视频直播频道7</option><option value="http://223.255.29.9/data/live/cstv3.m3u8">视频直播频道10</option>
+<option value="http://cibn.peoplevideo.cn/hls/vCIBNDMPD/800/vCIBNDMPD.m3u8">视频直播频道11</option>
+<option value="http://cibn.peoplevideo.cn/hls/vCIBNDYPD/800/vCIBNDYPD.m3u8">视频直播频道12</option>
+<option value="http://hls.live.kksmg.com/live/smgnews/playlist.m3u8">视频直播频道13</option>
+<option value="http://flv.ws.live.cntv.cn/live/flv/channel53.flv">视频直播频道15</option>
+<option value="http://media.vtibet.com/masvod/HLSLive/9/hanyuTV_q1.m3u8">视频直播频道16</option><option value="http://v.btzx.com.cn:1935/live/weishi.stream/playlist.m3u8">视频直播频道17</option>
+<option value="http://fms.cntv.lxdns.com/live/flv/channel38.flv">视频直播频道18</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_cl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">成龙电影直播</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_snsd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">少女时代直播</option> <option value="http://live.gslb.letv.com/gslb?stream_id=lb_zxc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">周星驰电影直播</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_yxlm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">英雄联盟游戏直播</option>         
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_bxjg_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">变形金刚直播</option>         
+ <option value="http://live.gslb.letv.com/gslb?stream_id=lb_styx_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">隋唐英雄直播</option>
+<option value="http://pl10.live.panda.tv/live_panda/3cf08b31f7643b7cc7c10829b892b8e7.flv">超清港片影院</option><option value="http://pl10.live.panda.tv/live_panda/a4dae5d557e93663fe09ea296b22dab3.flv">港剧大杂烩</option>
+<option value="http://pl8.live.panda.tv/live_panda/06fe32937fd6e0dbf821457037db6937.flv">火影忍者超清影院</option>
+<option value="http://pl8.live.panda.tv/live_panda/4bbbce9442f2b4a0faac7cc7ff0a4c87.flv">超清影院频道</option>
+<option value="http://pl3.live.panda.tv/live_panda/31871d1df4c81992ecb2632e3809fd68.flv">经典巨作影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/abfcc53311a9a8a6212ad92061b8310c.flv">本山篇频道</option>
+<option value="http://pl13.live.panda.tv/live_panda/c5a97489ca5603b0e6c4e66f78766866.flv">24小时喜剧人</option><option value="http://pl10.live.panda.tv/live_panda/de790af9a70ab805bd87a7a9152e04da.flv">爆笑小品直播</option><option value="http://pl8.live.panda.tv/live_panda/7e74350b1722cd85a90efa4ddbf0d829.flv">赌神影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/0c9d1af5d2f302878994c814575f9261.flv">在线影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/ab21aef092456f38b7a9f246d6412eda.flv">老电影电视剧</option><option value="http://pl8.live.panda.tv/live_panda/aae89adc8605aaa5123d73b2eaf99d89.flv">科幻片影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/a8c0fe0f87c0ec2508e9253c56dd7b56.flv">电影频道</option>
+<option value="http://pl11.live.panda.tv/live_panda/9c3e89fa02543baf05872b06c8a91c85.flv">精品电影</option><option value="http://pl3.live.panda.tv/live_panda/5cf5e5987dedbf336aa56f28b6aa1387.flv">新起点影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/5bc7615d0f329e38b238df62baf6ec7a.flv">港产经典电影</option>
+<option value="http://pl3.live.panda.tv/live_panda/2435316d691eea18c3af8458aee1cd19.flv">动作战争</option>
+<option value="http://pl3.live.panda.tv/live_panda/743ca4ab6a5828e53ecc8d15e10c3979.flv">精品影片</option>
+<option value="http://pl3.live.panda.tv/live_panda/85dc3fa0d8cc2f3249a8f710ff5a258a.flv">在线影院</option>
+<option value="http://pl10.live.panda.tv/live_panda/e9f52c0cecce29408e03760f1ed6338d.flv">李连杰影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/4a0bc70be4b8587d48940fa7fc6476da.flv">德云社开封箱</option>
+<option value="http://pl11.live.panda.tv/live_panda/0f5c5342d124ee86fb7376f2c89395ff.flv">高清科幻</option>
+<option value="http://pl3.live.panda.tv/live_panda/0da61c14c886ca19119123b505810276.flv">周星驰经典影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/f32a7a93e5a2e5e48cfad9da389a8aaf.flv">欧美影院</option>
+<option value="http://pl3.live.panda.tv/live_panda/260fe0e6d7d1b8315df667b112ab1c5a.flv">超级英雄高清</option>           <option value="http://live.gslb.letv.com/gslb?stream_id=lb_liangjian_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1007&format=cs1&expect=3">亮剑直播</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_xyj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">西游记</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_lyb_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">琅琊榜</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_wzz_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">伪装者</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_imsinger_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">我是歌手直播</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_hlxjr_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">欢乐喜剧人</option> <option value="http://live.gslb.letv.com/gslb?stream_id=lb_ldj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">鹿鼎记</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_snsdmb_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">四大名捕</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hzgg_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">还珠格格直播</option> <option value="http://live.gslb.letv.com/gslb?stream_id=lb_xyj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">西游记 直播</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xjghf_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">新济公活佛直播</option> <option value="http://live.gslb.letv.com/gslb?stream_id=lb_fsyx_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">封神英雄榜直播</option><option value="http://cibn.peoplevideo.cn/hls/vCIBNQCPD/800/vCIBNQCPD.m3u8">
+CIBN教育</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNJYPD/800/vCIBNJYPD.m3u8">
+CIBN</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNYYPD/800/vCIBNYYPD.m3u8">
+CIBN情感影院</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNQGYY/800/vCIBNQGYY.m3u8">
+CIBN都市剧场</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNDSJC/800/vCIBNDSJC.m3u8">
+CIBN抗战剧场</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNDSJC/800/vCIBNDSJC.m3u8">
+CIBN热播剧场</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNRBJC/800/vCIBNRBJC.m3u8">
+CIBN经典剧场</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNJDJC/800/vCIBNJDJC.m3u8">
+CIBN精品影院</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNJPYY/800/vCIBNJPYY.m3u8">
+CIBN电影</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNDYPD/800/vCIBNDYPD.m3u8">
+CIBN华视院线</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNHSYX/800/vCIBNHSYX.m3u8">
+CIBN电影导视</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNDYDS/800/vCIBNDYDS.m3u8">
+CIBN微电影</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNWDYPD/800/vCIBNWDYPD.m3u8">
+CIBN纪录片</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNJLPD/800/vCIBNJLPD.m3u8">
+CIBN动漫</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNDMPD/800/vCIBNDMPD.m3u8">
+CIBN综艺</option> <option value="http://cibn.peoplevideo.cn/hls/vCIBNZYPD/800/vCIBNZYPD.m3u8">CIBN频道</option> 
+<option value="http://hls.kksmg.com/iphone/downloads/ch1/index.m3u8">看看新闻</option>
+<option value="http://pl8.live.panda.tv/live_panda/22cd1682e7e97c3d90fc6b1c7907a141.flv">电影直播1</option>
+<option value="http://113.207.64.8/pl8.live.panda.tv/live_panda/22cd1682e7e97c3d90fc6b1c7907a141.flv">
+电影直播2</option><option value="http://58.250.126.17/pl8.live.panda.tv/live_panda/8dd539552902c2ec70382e90bf67057d.flv">电影直播3</option> <option value="http://58.250.126.17/pl8.live.panda.tv/live_panda/f3ad3541208aebfc63e37314ef6895cc.flv">电影直播4</option> <option value="http://58.250.126.17/pl8.live.panda.tv/live_panda/f28d7d69a0d68afdc3e8fb032dd0c274.flv">电影直播5</option> <option value="http://58.250.126.17/pl8.live.panda.tv/live_panda/b229faeb4be929b447a43815ebe7d7d3.flv">电影直播7</option> <option value="http://113.207.64.8/pl8.live.panda.tv/live_panda/4bbbce9442f2b4a0faac7cc7ff0a4c87.flv">电影直播7</option> <option value="http://pl8.live.panda.tv/live_panda/4bbbce9442f2b4a0faac7cc7ff0a4c87.flv">电影直播8</option> <option value="http://pl8.live.panda.tv/live_panda/e9d771cdb617ed685b3e4936a5b47691.flv">电影直播8</option> <option value="http://113.207.64.8/pl8.live.panda.tv/live_panda/8eab78c56d466ec592bec91cbcefbde5.flv">电影直播9</option> <option value="http://pl8.live.panda.tv/live_panda/8eab78c56d466ec592bec91cbcefbde5.flv">电影直播10</option> <option value="http://113.207.64.8/pl8.live.panda.tv/live_panda/8569a29ba9a59de6470465174647712b.flv">电影直播10</option> <option value="http://pl8.live.panda.tv/live_panda/8569a29ba9a59de6470465174647712b.flv">电影直播11</option> <option value="http://113.207.64.8/pl8.live.panda.tv/live_panda/c94667deb1d547c9109072e983f16a4b.flv">电影直播11</option> <option value="http://pl8.live.panda.tv/live_panda/c94667deb1d547c9109072e983f16a4b.flv">电影直播</option> <option value="http://113.207.64.8/pl8.live.panda.tv/live_panda/d12526c6318330546d545343abd39099.flv">电影直播12</option> <option value="http://pl8.live.panda.tv/live_panda/d12526c6318330546d545343abd39099.flv">电影直播频道</option> <option value="http://113.207.64.8/pl8.live.panda.tv/live_panda/a801d157baf82ce4bcb132082b35f5a6.flv">电影直播13</option> <option value="http://pl8.live.panda.tv/live_panda/a801d157baf82ce4bcb132082b35f5a6.flv">电影直播14</option>  <option value="http://chyd-wsvod.wasu.tv/data13/ott/344/2015-06/10/1433923712941_962055/playlist.m3u8">电影直播15</option> <option value="http://chyd-wsvod.wasu.tv/data9/ott/344/2013-06/07/1370600803122_737204/playlist.m3u8">电影直播16</option> <option value="http://chyd-wsvod.wasu.tv/data13/ott/344/2015-05/28/1432782476341_377935/playlist.m3u8">电影直播17</option> <option value="http://chyd-wsvod.wasu.tv/data12/ott/344/2015-03/05/1425521511475_343177/playlist.m3u8">电影直播18</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lwj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">综艺频道3</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lszy_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">综艺频道2</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ent_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">综艺频道1</option>
+<option value="http://live.dltv.cn:81/live11/live11_video.m3u8">云动V电影</option>
+<option value="http://pl8.live.panda.tv/live_panda/8eab78c56d466ec592bec91cbcefbde5.flv">周润发影院</option>
+<option value="http://pl8.live.panda.tv/live_panda/b229faeb4be929b447a43815ebe7d7d3.flv">贝爷最强打野</option>
+<option value="http://pl8.live.panda.tv/live_panda/5cf24c160ec2d9f2d300c52dffbbc10a.flv">相声专场</option>
+<option value="http://pl8.live.panda.tv/live_panda/8569a29ba9a59de6470465174647712b.flv">经典搞笑</option>
+<option value="http://pl8.live.panda.tv/live_panda/a801d157baf82ce4bcb132082b35f5a6.flv">三国影院</option>
+<option value="http://pl8.live.panda.tv/live_panda/f81f840257ec00194af0b83e7b16277a.flv">古惑仔影院</option>
+<option value="http://pl8.live.panda.tv/live_panda/8dd539552902c2ec70382e90bf67057d.flv">周星驰影院</option>
+<option value="http://pl10.live.panda.tv/live_panda/c4588596ae0c9ac7bdcb3f39f0c77de4.flv">港片成龙影院</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_dzdy_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视香港电影</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_hkmovie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">武侠剧场</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_wxjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">在线剧场</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_dsjc_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">都市剧场</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_nxjc_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">女性剧场</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_lzjc_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">励志剧场</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_shjc_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">神话剧场</option>
+<option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_comedy_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">电视剧频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_tv_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">
+乐剧频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_make_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视跟播</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_genbo_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">纪录片频道</option>
+<option value="http://fms.cntv.lxdns.com/live/flv/channel50.flv">新科动漫</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_concert_3000&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">演唱会频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_ent_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">综艺频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_rmmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1"></option>热门高清美剧
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_meiju_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1"></option>侦探高清美剧<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_gbmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1"></option>跟播高清美剧<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_jdmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">经典高清美剧</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_khmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">科幻高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_qhmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">奇幻高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_xjmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">喜剧高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_dymj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">单元高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_fzmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">肥皂高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_cjyx_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">超级英雄高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_rxdzmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">热血动作高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_qcoxmj_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">青春偶像高清美剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_movie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">电影频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_tv_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">电视剧频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_comic_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">动漫频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_sports_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">体育频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_music_1080p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">音乐频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_jilu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">科教纪录片</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_yule_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">娱乐直播</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_lanqiu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">篮球直播</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_zuqiu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">足球直播</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_golf_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">高尔夫直播</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_wangqiu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">网球直播</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_dzjj&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">电子竞技</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_mv_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">MV音乐</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_hkmovie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">香港电影</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_yylbpd_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">粤语频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_koreatv_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">韩剧剧场</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_kangz_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">抗战剧场</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_yxlm_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">英雄联盟</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_hydy_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">华语电影</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_rhdy_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">日韩电影</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_F1_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">赛车频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_taiqiu_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">台球频道</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_qcoxmj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">青春美剧</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_rxdzmj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">热血动作美剧</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_gbmj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">跟播美剧</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_qhmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">奇幻美剧</option>
+<option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_jilu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">韩剧频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_koreatv_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">时装周频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_shizhuang_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">动漫频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_comic_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">演唱会频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_concert_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">儿歌频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_erge_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">综艺频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_ent_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">综艺(回放)</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lszy_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">音乐频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_music_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">LIVE生活</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_livemusic_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">古典音乐</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_classical_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">戏曲频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_xiqu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">动物世界</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_sjsdzg_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">舌尖上的中国</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_jilu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">科教频道</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_dwsj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">频道MV</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_mv_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">风尚频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_fengshang_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">娱乐频道</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_yule_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">好莱坞频道</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hlw_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">经典美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jdmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_nlmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+欧美美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_glmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+单元美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_dymj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+肥皂美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_fzmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+律政务美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lzywmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+热血动作美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_rxdzmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+热门美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_rmmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+喜剧美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xjmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+科幻美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_khmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+罪案烧脑</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zasn_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+跟播美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_gbmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+姐妹淘剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jmtjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+青春偶像美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_qcoxmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+小众美剧</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xzmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+情景喜剧剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_qjxjjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+重播之王</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_cbzw_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+脱单剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_tdjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+在线剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_cljc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+军旅剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jljc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+女性剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_nxjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+都市剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_dsjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+兄弟剧场</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xdjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+欢乐喜剧人</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hlxjr_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+笑傲江湖</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_xajh_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">红高粱</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_hgl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">甄嬛传</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_zhenhuan_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">北平无战事</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_bpwzs_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">凤凰传奇</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_fhcq_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">何以笙箫默</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_hysxm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">舌尖上的中国</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_sjsdzg_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">活色生香</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_hssx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">隋唐英雄</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_styx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">封神英雄</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_fsyx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">芭莎TV</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_bsTV_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+粤语频道</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_yylbpd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+超级英雄</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hyjj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">新济公活佛</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xjghf_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">还珠格格</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hzgg_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+步步惊心</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_bbjx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+亮剑</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_liangjian_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">在线电视剧</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_jslw_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">军事瞭望</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_yanglan_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">杨澜访谈录</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_lzwldsmt_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">史密特</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_hpdqssd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">全盛时代</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_byhdqc_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">冰与火青春</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_mldmm_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">美丽的秘密</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lzxb_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">聊新编</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_sbtj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+包青天</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_bqt_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+满仓进城</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_mcjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+平凡的世界</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_pfdsj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+少年四大名捕</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_snsdmb_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+武林外传</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_wlwz_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+出彩中国人</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_cczgr_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+锦绣缘华丽冒险</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jxyhlmx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+我是歌手</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lmbj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">
+龙门镖局</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lmbj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+想明白了再结婚</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xmblzjh_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+孔二狗</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_keg_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+虎妈猫爸</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hmmb_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+聊斋新编</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lzxb_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+小时代</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xsd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+抓住彩虹的男人</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zzchdnr_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+偏偏喜欢你</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lb_ppxhn_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+后海不是海</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lb_hhbsh_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+蒙面歌王</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_mmgw_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+你是我的姐妹</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lb_nswdjm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">因为爱情有奇迹</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_glmyyj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">格莱美音乐</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_fhcq_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">凤凰传奇</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zgyg_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">中国摇滚</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_SNH48_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">SNH48</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_lyc_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">李宇春</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_ccs_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">陈楚生</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_sadingding_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1007&format=cs1&expect=3">萨顶顶</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_hyb_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">胡彦斌</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_hqs_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=3">黄绮珊</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_chenyixun_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">陈奕迅</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_dengziqi&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">邓紫棋</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_tanjing_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">谭晶</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_zj_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">张杰</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_hanhong_800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">韩红</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_yuquan&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">羽泉</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_wf_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">汪峰</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_imsinger_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">我是歌手NEW</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_mmgw_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">蒙面歌王</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_jsyy_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">爵士音乐</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_classical_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">古典音乐</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_yinyuejie_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">音乐节</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_concert_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">演唱会</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_mv_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">MV音乐</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_langlang_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">郎朗音乐</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_music_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=3">音乐频道</option>
+<option value="http://live.gslb.letv.com/gslb?stream_id=lb_zonghe_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+电影片花</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_trailer_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1"音乐节</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_yinyuejie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">华鼎奖颁奖典礼</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hdjbjdl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+乐视周星驰</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_zxc_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">成龙影院频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_cl_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">黄晓明</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hxm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">张艺谋</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zym_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+刘亦菲</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lyf_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1008&format=cs1&expect=1">
+吴宗宪</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_wzx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+郑晓龙</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zxl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+王雷</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_wl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">邓紫棋</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_dengziqi_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">汪峰</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_wf_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">羽泉</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_yuquan_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">张杰</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_zj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">冯绍峰</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_fsf_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">古力娜扎</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_glnz_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">段奕宏</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_dyh_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">李宇春</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lyc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">陈晓</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_cx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">马伊琍</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_mayili_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">牛莉</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_niuli_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">冯远征</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_fyz_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">翁虹</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_wenghong_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">杜淳</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_duchun_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">孟广美</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_mgm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">吕颂贤</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lsx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">何润东</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hrd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+郭涛</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_gt_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+陈楚生</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ccs_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+胡彦斌</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hyb_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+刘力扬</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lly_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+田原</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_tianyuan_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+黄义达</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hyd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+方中信</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_fzx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+蔡少芬</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_csf_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+斓曦</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+吕丽萍</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_llp_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+巩峥</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_gz_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+孙海英</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_shy_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+蒋欣</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jiangxin_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+叶璇</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_yx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+沙溢</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_shayi_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+颖儿</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ye_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+应采儿</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_yce_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+黄绮珊</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hqs_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+韩磊</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+宁浩</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ninghao_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+何晟铭</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hsm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+曹征</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_caozheng_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+金铭</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+刘恺威</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lkw_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+陈小春</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_cxc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+乔任梁</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_qrl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1006&format=cs1&expect=1">
+姜武</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jw_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+于正</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_yz_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+何炅</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_hj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+杜海涛</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_dht_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+陈赫</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_chenhe_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+薛佳凝</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xjn_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+林申</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ls_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+张晓龙</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zhangxiaolong_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">张若昀</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zrj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+唐艺昕</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_tyx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+赵立新</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zlx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+少女时代</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_snsd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+郎朗</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_langlang_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+孙坚</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_sunjian_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+苏芒</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_sumang_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+田朴珺</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_tpj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+丁子峻</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_dzj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+毛晓彤</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_mxt_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+查可欣</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zkx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+李丹</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lidan_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+李东学</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ldx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+陈创</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_cc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+莫小棋</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_mxq_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+童瑶</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_tongyao_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+徐百卉</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xbh_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+张博</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_zhangbo_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+王伟</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_wangwei_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+刘威葳</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lww_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+梁丹妮</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ldn_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+李崇霄</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lichongxiao_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">亲子</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_qinzi_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+欧美卡通</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_omkt_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+巴啦啦小魔仙</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_bllxmx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+熊出没</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_xcm_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">名侦探柯南</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_mztkn_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐猪猪侠</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_zzx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">大头儿子</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_dtez_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">宠物小精灵</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_cwxjl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+哆啦A梦</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_dlam_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+樱桃小丸子</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_ytxwz_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+蜡笔小新</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_lbxx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+小马宝莉</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_xmbl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+巨神战击队</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_jszjd_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+完美游戏</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_wmyx_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=cs1&expect=1">
+纸牌屋</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_zpw_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">变形金刚</option><option value="http://live.gslb.letv.com/gslb?stream_id=lb_bxjg_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">影院直播频道</option><option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_dzdy_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">香港电影</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_hkmovie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">武侠剧场</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_wxjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">喜剧频道</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_comedy_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">电视剧频道</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_tv_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">韩剧频道</option> <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_shizhuang_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">动漫频道</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_comic_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视演唱会</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_concert_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视综艺</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_ent_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视综艺(回放)</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_lszy_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+乐视音乐</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_music_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视LIVE生活</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_livemusic_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视古典音乐</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_classical_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">乐视戏曲</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_xiqu_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">动物世界</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_dwsj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+乐视风尚</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_fengshang_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">娱乐频道</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_yule_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">日韩电影</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_rhdy_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+经典美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_jdmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+单元美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_dymj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+律政医务美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_lzywmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+热血动作美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_rxdzmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+热门美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_rmmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+科幻美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_khmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+跟播美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_gbmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+姐妹淘剧场</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_jmtjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+青春偶像美剧</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_qcoxmj_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+情景喜剧剧场</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_qjxjjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+军旅剧场</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_jljc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+年代剧场</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_ndjc_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+1080P剧场</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_1080P_1080p3m&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+欢乐喜剧人</option>  <option value="http://live.gslb.letv.com/gslb?stream_id=lb_hlxjr_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">
+笑傲江湖</option>  <option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_xajh_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">武媚娘传奇</option><option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_wl_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">剧场频道</option>
+<option value="http://live.g3proxy.lecloud.com/gslb?stream_id=lb_wl_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1">剧场播放</option><option value="http://wshls4.live.cnlive.com/cdn/xinyingshi/playlist.m3u8?wsSecret=8ef44ad1ab34358610dabd18de6563d1&wsTime=569ce284">视讯频道</option><option value="http://116.199.4.201:8114/a/b/index.m3u8?FvSeid=&Fsv_filetype=&Fsv_ctype=LIVES&Fsv_cid=&Fsv_chan_hls_se_idx=63&Fsv_rate_id=1&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=1&Fsv_ShiftTsp=240&Provider_id=a&Pcontent_id=b&Fsv_otype=1&Fsv_otype=1">新视觉HD</option>
+<option value="http://live.gslb.letv.com/gslb?tag=live&stream_id=lb_wmncq_1300&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=C1S&expect=1">电视剧频道</option><option value="http://cibn.peoplevideo.cn/hls/vCIBNDYPD/800/vCIBNDYPD.m3u8">HB播放频道</option>
+ </select></center></li><li data-role="list-divider">播放有问题请到官方QQ群反馈</li><li>更多精彩请百度搜索:智卓黑客</li><li>缓存或播放有问题请选择其他频道观看</li><li>手机版在线播放平台</li> <li><a href="http://zhizhuoh.lofter.com" data-ajax="false">官方:http://zhizhuoh.lofter.com</a></li> <li><a href="../gjdq/qqq.html" data-ajax="false">点击:说明</a></li></ul>
+  </div>
+  <!-- /content -->
+  <div data-role="footer">
+    <h4>版权声明 &copy; 智卓星网影视联盟平台</h4>
+  </div>
+  <!-- /footer -->
+      </div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!-- /page -->
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/18759442.js"></script>
+<noscript><a href="http://www.51.la/?18759442"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/18759442.asp" style="border:none" /></a></noscript>
+</body>
+
+</span>
+</html>
